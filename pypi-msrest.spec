@@ -4,7 +4,7 @@
 #
 Name     : pypi-msrest
 Version  : 0.6.21
-Release  : 45
+Release  : 46
 URL      : https://files.pythonhosted.org/packages/bb/2c/e8ac4f491efd412d097d42c9eaf79bcaad698ba17ab6572fd756eb6bd8f8/msrest-0.6.21.tar.gz
 Source0  : https://files.pythonhosted.org/packages/bb/2c/e8ac4f491efd412d097d42c9eaf79bcaad698ba17ab6572fd756eb6bd8f8/msrest-0.6.21.tar.gz
 Summary  : AutoRest swagger generator Python client runtime.
@@ -12,16 +12,12 @@ Group    : Development/Tools
 License  : MIT
 Requires: pypi-msrest-python = %{version}-%{release}
 Requires: pypi-msrest-python3 = %{version}-%{release}
-Requires: requests-oauthlib
+Requires: pypi(requests_oauthlib)
 BuildRequires : buildreq-distutils3
-Provides: msrest
-Provides: msrest-python
-Provides: msrest-python3
 BuildRequires : pypi(certifi)
 BuildRequires : pypi(isodate)
 BuildRequires : pypi(requests)
 BuildRequires : pypi(requests_oauthlib)
-BuildRequires : requests-oauthlib
 
 %description
 ===============================
@@ -58,7 +54,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641456613
+export SOURCE_DATE_EPOCH=1641838508
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
